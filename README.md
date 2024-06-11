@@ -1,0 +1,30 @@
+### Modelo de CHAT GPT gratuito, privado y 100% local
+
+Éste tutorial lo ha explicado <a href="https://twitch.tv/midudev">midudev</a> en su canal de Twitch el día de hoy para toda su audiencia, y estoy totalmente agradecido por sus videos y manera de enseñar a la comunidad, la cuál formo parte de ella hace más de un año! y me sigue ayudando a expandir en el mundo de la programación con JavaScript. Este trabajo forma parte del 4° proyecto de sus <a href="https://javascript100.dev/">100 Proyectos de JavaScript.</a>
+
+### WebLLM: Inferencia de Modelos de Lenguaje en el Navegador
+
+WebLLM es un motor de inferencia de modelos de lenguaje de alto rendimiento que ejecuta la inferencia directamente en los navegadores web con aceleración por hardware. Todo se ejecuta dentro del navegador sin necesidad de soporte de servidor y está acelerado con WebGPU.
+
+WebLLM es completamente compatible con la API de OpenAI. Es decir, puedes usar la misma API de OpenAI en cualquier modelo de código abierto localmente, con funcionalidades que incluyen modo JSON, llamadas a funciones, transmisión en tiempo real, etc.
+
+Podemos aprovechar muchas oportunidades divertidas para construir asistentes de IA para todos y habilitar la privacidad mientras disfrutamos de la aceleración por GPU.
+
+Puedes usar WebLLM como un paquete base de npm y construir tu propia aplicación web sobre él siguiendo la documentación y comenzando con la guía Get Started. Este proyecto es un proyecto compañero de MLC LLM, que permite el despliegue universal de modelos de lenguaje de gran tamaño en diversos entornos de hardware.
+
+### Lista de Modelos Soportados
+
+Consulta la lista completa de modelos disponibles en MLC Models. WebLLM soporta un subconjunto de estos modelos disponibles y la lista se puede acceder en prebuiltAppConfig.model_list.
+
+Aquí están las principales familias de modelos actualmente soportados:
+
+Llama: Llama 3, Llama 2, Hermes-2-Pro-Llama-3
+Phi: Phi 3, Phi 2, Phi 1.5
+Gemma: Gemma-2B
+Mistral: Mistral-7B-v0.3, Hermes-2-Pro-Mistral-7B, NeuralHermes-2.5-Mistral-7B, OpenHermes-2.5-Mistral-7B
+Qwen (通义千问): Qwen2 0.5B, 1.5B, 7B
+
+### Aquí dejo el enlace a la documentación: <a href="https://github.com/mlc-ai/web-llm/blob/main/README.md">WebLLM</a>
+
+> [!Note]
+> Particularmente he elegido el modelo Llama 3.8, que pesa 5.17 GB. Por lo tanto, es necesario esperar a que se descargue completamente este paquete antes de utilizar la aplicación. Asegúrate de tener suficiente espacio en tu dispositivo y una buena conexión a Internet para facilitar esta descarga.
