@@ -25,7 +25,7 @@ const SELECTED_MODEL = "Llama-3-8B-Instruct-q4f32_1-MLC-1k";
 
 // Creación del motor de IA utilizando un worker
 const engine = await CreateWebWorkerMLCEngine(
-  new Worker("/worker.js", { type: "module" }),
+  new Worker("worker.js", { type: "module" }),
   SELECTED_MODEL,
   {
     // Callback para mostrar el progreso de la inicialización
