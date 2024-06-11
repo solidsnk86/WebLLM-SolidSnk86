@@ -26,5 +26,55 @@ Qwen (通义千问): Qwen2 0.5B, 1.5B, 7B
 
 ### Aquí dejo el enlace a la documentación: <a href="https://github.com/mlc-ai/web-llm/blob/main/README.md">WebLLM</a>
 
+#
+
 > [!Note]
 > Particularmente he elegido el modelo Llama 3.8, que pesa 5.17 GB. Por lo tanto, es necesario esperar a que se descargue completamente este paquete antes de utilizar la aplicación. Asegúrate de tener suficiente espacio en tu dispositivo y una buena conexión a Internet para facilitar esta descarga.
+
+#
+
+### Aceleración por GPU en el Navegador
+
+Este modelo se ejecuta a través de tu GPU para mejorar el rendimiento. Para asegurarte de que esto funcione correctamente, debes verificar si tu navegador soporta WebGPU y si está habilitado. WebGPU es una API web moderna diseñada para ofrecer acceso a las capacidades avanzadas de las GPUs.
+
+- Cómo Verificar Soporte de GPU en tu Navegador:
+
+1. Google Chrome:
+
+Escribe en la barra de direcciones
+
+```plaintext
+chrome://gpu
+```
+
+Revisa la sección sobre WebGPU para ver si está habilitado.
+
+2. Mozilla Firefox:
+
+Escribe en la barra de direcciones y presiona Enter.
+
+```plaintext
+about:config
+```
+
+Busca _dom.webgpu.enabled_ y asegúrate de que esté configurado en true.
+
+3. Microsoft Edge:
+
+Similar a Google Chrome, escribe en la barra de direcciones y presiona Enter.
+
+```plaintext
+edge://gpu
+```
+
+Revisa la sección sobre WebGPU.
+Si WebGPU no está habilitado, consulta la documentación de tu navegador sobre cómo activarlo. La compatibilidad y el rendimiento pueden variar según el navegador y el hardware de tu dispositivo, así que asegúrate de utilizar una versión actualizada del navegador.
+
+También en la consola de desarrollo del navegador pueden ejecutar el siguiente script:
+
+```javascript
+navigator.gpu.requestAdapter();
+```
+
+<p>Si logran ver algo como ésto quiere decir que lo soporta:</p>
+<img src="gpu-request-adapter.png" width="60%" height="50%" alt="Imagen de la consola de desarrollo del navegador.">
