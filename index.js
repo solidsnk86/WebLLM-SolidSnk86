@@ -1,7 +1,7 @@
 /**
  * Este modelo de lenguaje es totalmente gratuito y tiene su documentación
  * en el siguirnte enlace de GitHub: https://github.com/mlc-ai/web-llm/blob/main/README.md
- * Tal cual se vé lo podemos importar de la siguiente forma.
+ * El modelo se importa de la siguiente forma.
  */
 import { CreateWebWorkerMLCEngine } from "https://esm.run/@mlc-ai/web-llm";
 
