@@ -1,6 +1,6 @@
 ### Modelo de CHAT GPT gratuito, privado y 100% local
 
-Éste tutorial lo ha explicado <a href="https://twitch.tv/midudev">midudev</a> en su canal de Twitch el día de hoy para toda su audiencia, y estoy totalmente agradecido por sus videos y manera de enseñar a la comunidad, la cuál formo parte de ella hace más de un año! y me sigue ayudando a expandir en el mundo de la programación con JavaScript. Este trabajo forma parte del 4° proyecto de sus <a href="https://javascript100.dev/">100 Proyectos de JavaScript.</a>
+Éste tutorial lo ha explicado <a href="https://twitch.tv/midudev">midudev</a> en su canal de Twitch el día de hoy, el cuál explica como hacer un chat GPT de manera local, de acuerdo a la documentación de <a href="https://github.com/mlc-ai/web-llm/blob/main/README.md">WebLLM</a>. Estoy totalmente agradecido por sus videos y manera de enseñar a la comunidad, y me sigue ayudando a expandir en el mundo de la programación con JavaScript. Este trabajo forma parte del 4° proyecto de sus <a href="https://javascript100.dev/">100 Proyectos de JavaScript.</a>
 
 ### WebLLM: Inferencia de Modelos de Lenguaje en el Navegador
 
@@ -23,8 +23,6 @@ Phi: Phi 3, Phi 2, Phi 1.5
 Gemma: Gemma-2B
 Mistral: Mistral-7B-v0.3, Hermes-2-Pro-Mistral-7B, NeuralHermes-2.5-Mistral-7B, OpenHermes-2.5-Mistral-7B
 Qwen (通义千问): Qwen2 0.5B, 1.5B, 7B
-
-### Aquí dejo el enlace a la documentación: <a href="https://github.com/mlc-ai/web-llm/blob/main/README.md">WebLLM</a>
 
 #
 

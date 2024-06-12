@@ -38,6 +38,7 @@ const engine = await CreateWebWorkerMLCEngine(
   }
 );
 
+
 // Evento que se ejecuta al enviar el formulario
 $form.addEventListener("submit", async (event) => {
   event.preventDefault(); // Previene la acción por defecto del formulario
@@ -65,7 +66,7 @@ $form.addEventListener("submit", async (event) => {
     messages,
     stream: true,
   });
-
+  console.log(chunks)
   let reply = "";
 
   // Añade un mensaje vacío del bot al DOM para luego actualizarlo con la respuesta
@@ -78,7 +79,7 @@ $form.addEventListener("submit", async (event) => {
     reply += content;
     $botMessage.textContent = reply; // Actualiza el contenido del mensaje del bot en el DOM
   }
-
+  
   // Vuelve a activar el botón una vez procesada la respuesta
   $button.removeAttribute("disabled");
 
@@ -110,6 +111,5 @@ function addMessage(text, sender) {
 
   // Desplaza el contenedor principal hacia abajo para mostrar el último mensaje
   $container.scrollTop = $container.scrollHeight;
-
   return $text; // Retorna el elemento de texto del mensaje
 }
