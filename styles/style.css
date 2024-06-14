@@ -4,20 +4,38 @@ body {
   background: #23272e;
   display: grid;
   place-content: center;
-  height: 100dvh;
+}
+
+h1 {
+  text-align: center;
+  color: #ccc;
+  text-decoration: underline 2px;
+  text-underline-offset: 5px;
+}
+
+article {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+
+  & p {
+    font-size: 12px;
+    color: #ccc;
+  }
 }
 
 main {
   width: 400px;
   max-width: 100%;
   height: 70vh;
+  justify-content: center;
 
   background: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 8px;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -68,13 +86,15 @@ ul {
     align-self: flex-start;
     span,
     p {
-      background: rgb(201, 212, 100);
+      background: rgb(199, 211, 92);
     }
   }
 }
 
 form {
   display: flex;
+  width: 420px;
+  margin: 0 auto;
 
   input {
     border-radius: 999999px;
@@ -106,6 +126,15 @@ form {
   }
 }
 
+.preloader {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  border-right: 4px solid royalblue;
+}
+
 small {
   font-size: 10px;
   color: #555;
@@ -115,4 +144,26 @@ small {
   right: 0;
   margin: auto;
   width: 400px;
+}
+
+.desktop-app {
+  display: none;
+}
+
+@media (max-width: 762px) {
+  article {
+    display: none;
+  }
+  main,
+  form {
+    display: none;
+    background-color: #23272e;
+  }
+  .desktop-app {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    color: #ccc;
+    top: 50%;
+  }
 }
