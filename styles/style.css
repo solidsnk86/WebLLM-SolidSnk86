@@ -59,7 +59,8 @@ ul {
     align-items: flex-end;
     span,
     p {
-      background: rgb(195, 209, 226);
+      background: rgb(95, 98, 102);
+      color: #fff;
     }
   }
 
@@ -67,7 +68,7 @@ ul {
     align-self: flex-start;
     span,
     p {
-      background: rgb(194, 216, 202);
+      background: rgb(201, 212, 100);
     }
   }
 }
@@ -100,7 +101,7 @@ form {
     }
 
     &:hover {
-      background: rgb(142, 109, 219);
+      background: rgb(172, 170, 177);
     }
   }
 }
