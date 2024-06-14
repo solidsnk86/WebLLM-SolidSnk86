@@ -137,8 +137,8 @@ form {
 
 small {
   font-size: 10px;
-  color: #555;
-  position: fixed;
+  color: #f0f0f0;
+  position: relative;
   bottom: 10px;
   left: 0;
   right: 0;
