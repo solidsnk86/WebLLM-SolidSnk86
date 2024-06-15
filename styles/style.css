@@ -3,25 +3,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #23272e;
   display: grid;
+  height: 100dvh;
   place-content: center;
-}
-
-h1 {
-  text-align: center;
-  color: #ccc;
-  text-decoration: underline 2px;
-  text-underline-offset: 5px;
-}
-
-article {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-
-  & p {
-    font-size: 12px;
-    color: #ccc;
-  }
 }
 
 main {
@@ -138,7 +121,7 @@ form {
 small {
   font-size: 10px;
   color: #f0f0f0;
-  position: relative;
+  position: sticky;
   bottom: 10px;
   left: 0;
   right: 0;
@@ -146,24 +129,30 @@ small {
   width: 400px;
 }
 
-.desktop-app {
-  display: none;
+.loader {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50%;
+  font-weight: 700;
+
+  & i {
+    pointer-events: none;
+    width: 2.5em;
+    height: 2.5em;
+    border: 0.4em solid transparent;
+    border-color: #ccc;
+    border-top: 0.4em solid #61ec3e;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+  }
 }
 
-@media (max-width: 762px) {
-  article {
-    display: none;
-  }
-  main,
-  form {
-    display: none;
-    background-color: #23272e;
-  }
-  .desktop-app {
-    display: flex;
-    position: absolute;
-    text-align: center;
-    color: #ccc;
-    top: 50%;
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
   }
 }
